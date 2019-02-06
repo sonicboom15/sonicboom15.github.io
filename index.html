@@ -17,9 +17,38 @@
 </head>
 
 <body>
-<div class="cognito">
-<script src="https://services.cognitoforms.com/s/AVnRXf1SvUuxqrkLPEdc4g"></script>
-<script>Cognito.load("forms", { id: "1" });</script>
+  <b> The Code is Below Us </b>
+  <br>package test;
+<br>
+public class hashValue {	<br>
+	int i;	<br>
+	public int hashCode()<br>
+	{		return i;}<br>
+	<br>
+	public boolean equals (Object obj)	{<br>
+		hashValue xObj = (hashValue)obj;<br>
+		if (xObj.i == this.i)<br>
+			return true;<br>
+		else<br>
+			return false;<br>
+		}	<br>
+	public static void main(String[] args) {		<br>
+		hashValue h1 = new hashValue();<br>
+		h1.i = 20;		<br>
+		hashValue h2 = new hashValue();<br>
+		h2.i = 20;		<br>
+<br>
+		if (h1.hashCode() == h2.hashCode())<br>
+        if (h1.equals(h2))<br>
+        	System.out.println("Both objects are same..");<br>
+        else<br>
+        	System.out.println("Two different objects..");	<br>
+		<br>
+<br>
+	}<br>
+<br>
+}<br>
+<br>
 </div>
   
 </body>
